@@ -1,0 +1,110 @@
+footer{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 80px 100px;
+}
+footer h3{
+    font-family: "Momo Trust Display", sans-serif;
+    color:#bababa;
+}
+footer p{
+    font-family: "Stack Sans Headline", sans-serif;
+    color:#525252;
+}
+footer .mainContainer {
+    display: flex;
+    gap: 100px;
+}
+footer .mainContainer .contain1 {
+    line-height: 2;
+}
+footer .mainContainer .contain2 {
+    line-height: 2;
+}
+footer .mainContainer .contain3 {
+    line-height: 2;
+}
+footer .rightPart .card{
+    background-color: rgb(44, 44, 44);
+    padding: 80px 40px 80px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .card h1{
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 70px;
+    width: 500px;
+    text-align: center;
+}
+footer .card p{
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 500px;
+    margin: 40px 0;
+}
+footer .card input{
+    width: 480px;
+    padding: 16px 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(186, 186, 186);
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-size: 15px;
+}
+
+footer .Details {
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 16px;
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+footer .Details:hover {
+    background-color: white;
+    color: black;
+}
+footer .btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+footer .btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+footer .Details:hover .btn-text{
+    transform: translateY(-100%);
+}
+footer .card {
+    transform: translateY(-300px);
+}
+footer .card .contain4 {
+    text-align: start;
+}
+footer .card .contain4 h2,h3,h4 {
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+

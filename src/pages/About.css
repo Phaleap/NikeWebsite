@@ -1,0 +1,320 @@
+.sectionAbout1 {
+    height: 200vh; /* allow scroll */
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionAbout1 .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sectionAbout1 .shoe {
+    height: 50vh;
+    width: auto;
+    z-index: 0;
+    transform: rotate(-90deg) scale(1);
+    transform-origin: center;
+    will-change: transform;
+  transition: transform 0.05s linear; /* tiny smoothing */
+}
+
+.sectionAbout1 h1{
+    font-family: "Stack Sans Headline", sans-serif;
+  font-size: 100px;
+  color:#8a8a8a;
+}
+.sectionAbout1 span{
+    font-style: italic;
+    font-family: "Momo Trust Display", sans-serif;
+}
+.sectionAbout2 {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sectionAbout2 .bigImage{
+    height: 110vh;
+    overflow: hidden;
+}
+.sectionAbout2 .bigImage img{
+    height: 120vh;
+    position: relative;
+}
+.sectionAbout2 .rightPart {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.sectionAbout2 .leftPart{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.sectionAbout2 p{
+    width: 500px;
+    font-family: "Instrument Serif", serif;
+    font-size: 30px;
+}
+.sectionAbout2 h1 {
+    font-size: 50px;
+    color:#8a8a8a;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+.sectionAbout2 .leftPart .smallImage img{
+    height: 400px;
+    z-index: -1;
+    position: relative;
+}
+.sectionAlone{
+    height: auto;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+.sectionAlone .Container{
+    display: flex;
+    flex-direction: column;
+}
+.sectionAlone .heading{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 50px;
+    text-align: center;
+}
+.sectionAlone .heading h1{
+    font-size: 100px;
+    color: rgb(85, 85, 85);
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+
+
+.sectionAbout8,
+.sectionAbout4,
+.sectionAbout5,
+.sectionAbout6,
+.sectionAbout7 {
+    height: auto;
+    align-items: flex-end;
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionAbout8 h1,
+.sectionAbout4 h1,
+.sectionAbout5 h1,
+.sectionAbout6 h1,
+.sectionAbout7 h1 {
+    font-size: 50px;
+    color: #8a8a8a;
+    font-family: "Stack Sans Headline", sans-serif;
+    padding-bottom: 30px;
+}
+
+
+.sectionAbout8 p,
+.sectionAbout4 p,
+.sectionAbout5 p,
+.sectionAbout6 p,
+.sectionAbout7 p {
+    width: 500px;
+    font-family: "Instrument Serif", serif;
+    font-size: 20px;
+}
+
+
+.wrapperImage6,
+.wrapperImage2,
+.wrapperImage3,
+.wrapperImage4,
+.wrapperImage5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+
+.styleImage6 img,
+.styleImage2 img,
+.styleImage3 img,
+.styleImage4 img,
+.styleImage5 img {
+    height: 1000px;
+}
+.sectionValue {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow: hidden;
+}
+.sectionValue .leftSide img{
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+.sectionValue .leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.sectionValue .rightSide{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+/*section4*/
+.sectionValue {
+    display: flex;
+    height: auto;
+    background-color: white;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    padding: 0;
+    margin: 0;
+}
+
+/* LEFT SIDE */
+.sectionValue .leftPart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.sectionValue .bigImage {
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.sectionValue .bigImage img {
+    height: 120vh;
+    width: auto;
+    object-fit: cover;
+}
+
+/* RIGHT SIDE */
+.sectionValue .rightPart {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.sectionValue h1 {
+    font-size: 50px;
+    color: #8a8a8a;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+
+.sectionValue p {
+    max-width: 500px;
+    width: 100%;
+    font-family: "Instrument Serif", serif;
+    font-size: 24px;
+}
+
+/* Small image */
+.sectionValue .rightPart img {
+    height: 300px;
+    margin: 20px 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.sectionChoose {
+    height: auto;
+    padding: 50px;
+    overflow: hidden;
+}
+.sectionChoose .reason{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.sectionChoose .reason img{
+    height: 300px;
+    border-radius: 10px;
+}
+.sectionChoose .Reason1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+}
+.sectionChoose .Reason2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.sectionChoose .Reason3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 100px;
+}
+.sectionChoose .Reason4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 100px;
+}
+.sectionChoose .Reason5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}.sectionChoose .Reason6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+}
+.sectionChoose .heading h1{
+    text-align: center;
+    font-size: 50px;
+    color: #8a8a8a;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+.sectionChoose .text{
+    padding: 30px;
+}
+.sectionChoose .reason h1{
+    font-size: 30px;
+    color: #8a8a8a;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+.sectionChoose .reason p{
+    font-family: "Instrument Serif", serif;
+    font-size: 24px;
+}

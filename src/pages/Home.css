@@ -1,0 +1,1030 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 900px;
+  padding: 20px;
+}
+
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: "Instrument Serif", serif;
+}
+.section1 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 50px;
+  z-index: 1;
+}
+.imagePart {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section1 .cardContainer1 {
+  display: flex;
+  gap: 30px;
+}
+.section1 .cardContainer2 {
+  display: flex;
+  gap: 30px;
+  
+}
+.imagePart .card {
+    width: 400px;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(226, 226, 226);
+    padding: 30px;
+    border-radius: 20px;
+    align-items: center;
+    gap: 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.imagePart .card h1 {
+    font-size: 30px;
+    font-family: "Instrument Serif", serif;
+}
+.imagePart .card p {
+     font-family: "Montserrat", sans-serif;
+}
+
+.section1 .image {
+  height: 800px;
+  width: 60%;
+  z-index: 0;
+  background-image: url("https://beautymute.com/wp-content/uploads/2024/12/nike-gt-hustle-3-paige-bueckers-pe-3-scaled.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100% 20% 100% 20%;
+}
+.section1 .text {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform: translateX(-400px);
+}
+.section1 .text h1{
+    font-family: "DM Sans", sans-serif;
+    font-size: 60px;
+    color: rgb(99, 99, 99);
+}
+.section1 .text p{
+    font-size: 20px;
+    font-family: "Instrument Serif", serif;
+}
+.section1 .description span {
+    font-size: 60px;
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    color: rgb(99, 99, 99);
+    text-decoration: underline;
+}
+.icon {
+  font-size: 60px;
+  color: #8a8a8a; 
+  margin-bottom: 10px;
+}
+
+.section1 .card1 {
+  transform: translateY(300px) translateX(-200px);
+}
+.section1 .card2 {
+  transform: translateY(400px) translateX(100px);
+}
+.section1 .card3 {
+  transform: translateY(-100px) translateX(-150px);
+}
+.section1 .card4 {
+  transform: translateY(50px) translateX(100px);
+}
+.section2, .section3 {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.header h1{
+  font-size: 50px;
+  font-family: "Stack Sans Headline", sans-serif;
+  color:#8a8a8a;
+}
+.header h2 {
+  font-size: 60px;
+   font-family: "Momo Trust Display", sans-serif;
+    font-style: italic;
+    color:#8a8a8a;
+}
+.section2 .leftSide,
+.section2 .rightSide,
+.section3 .leftSide,
+.section3 .rightSide {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 img,
+.section3 img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+}
+.section2 .imgContainer,
+.section3 .imgContainer {
+  width: 100%;
+  border-radius: 10px;
+  height: 100vh;
+  overflow: hidden;
+}
+.section2 .rightSide,
+.section3 .leftSide {
+  padding: 40px;
+  display: flex;
+  align-items: flex-start; 
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.section2 .rightSide h1 {
+  font-size: 30px;
+  font-family: "Stack Sans Headline", sans-serif;
+}
+.section2 .rightSide h2 {
+  font-size: 60px;
+   font-family: "Momo Trust Display", sans-serif;
+    font-style: italic;
+}
+.section2 .rightSide .sCard1 {
+  height: auto;
+  width: auto;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  border: 1px solid rgb(204, 204, 204);
+  flex-direction: column;
+  box-shadow: 3px 4px 4px rgb(149, 149, 149);
+  align-items: stretch;
+  border-radius: 10px;
+}
+.section2 .rightSide .sCard1 .image {
+  background-image: url("https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/20547d52-3e1b-4c3d-b917-f0d7e0eb8bdf/custom-nike-air-force-1-low-by-you-shoes.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px; 
+  transition: background-image 0.3s ease-in-out;
+}
+.section2 .rightSide .sCard1 .image:hover {
+  background-image: url("https://eg0b3w.c2.acecdn.net/footwear/NIKE_AIR_FORCE_1_LOW_RETRO_DJ3911-102_WHITE_RED_1.jpg");
+}
+.section2 .rightSide .sCard1 .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+    font-family: "Instrument Serif", serif;
+}
+.section2 .rightSide .sCard2 {
+  height: auto;
+  width: auto;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  border: 1px solid rgb(204, 204, 204);
+  flex-direction: column;
+  box-shadow: 3px 4px 4px rgb(149, 149, 149);
+  align-items: stretch;
+  border-radius: 10px;
+}
+.section2 .rightSide .heading .smallContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 250px;
+  align-items: center;
+}
+.section3 .leftSide .heading .smallContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+}
+/* button */
+
+/* From Uiverse.io by cssbuttons-io */ 
+.smallContainer button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-family: "Momo Trust Display", sans-serif;
+font-style: italic;
+}
+
+.smallContainer button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+.smallContainer button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #282936;
+ border-radius: 1.625rem;
+}
+
+.smallContainer button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+.smallContainer button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+.smallContainer button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+.smallContainer button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.smallContainer button:hover .circle {
+ width: 100%;
+}
+
+.smallContainer button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+.smallContainer button:hover .button-text {
+ color: #fff;
+}
+.section2 .rightSide .sCard2 .image {
+  background-image: url("https://assets.myntassets.com/w_412,q_30,dpr_3,fl_progressive,f_webp/assets/images/30048642/2024/6/26/78498505-353b-4b50-8c2b-9a04d2e4325e1719396528529NikeAirMax90PremiumMensShoes1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px; 
+  transition: background-image 0.3s ease-in-out;
+}
+.section2 .rightSide .sCard2 .image:hover {
+  background-image: url("https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/6ee73b1b-6306-4612-a154-bac88930c818/custom-nike-air-max-90-shoes-by-you.png");
+}
+.section2 .rightSide .sCard2 .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+    font-family: "Instrument Serif", serif;
+}
+.section2 .sellingCards {
+  padding: 10px 5px 0px 0px;
+  display: flex;
+  gap: 20px;
+}
+.section2 .footerDes{
+  padding: 30px 0px 0px 10px;
+}
+.section2 .footerDes p{
+   font-size: 16px;
+   width: 300px;
+    font-family: "Instrument Serif", serif;
+}
+
+/* section3 */
+
+.section3 .leftSide .sCard1 {
+  height: auto;
+  width: auto;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  border: 1px solid rgb(204, 204, 204);
+  flex-direction: column;
+  box-shadow: 3px 4px 4px rgb(149, 149, 149);
+  align-items: stretch;
+  border-radius: 10px;
+}
+.section3 .leftSide .sCard1 .image {
+  background-image: url("https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/0441ef67-f194-426e-a8f4-496b5579c8ec/AIR+MAX+DN8+%28GS%29.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px; 
+  transition: background-image 0.3s ease-in-out;
+}
+.section3 .leftSide .sCard1 .image:hover {
+  background-image: url("https://www.nike.ae/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dw8f2185e2/nk/fe0/5/f/7/c/2/fe05f7c2_f62d_4336_92a0_8eec0385d665.jpg");
+}
+.section3 .leftSide .sCard1 .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+    font-family: "Instrument Serif", serif;
+}
+.section3 .leftSide .sCard2 {
+  height: auto;
+  width: auto;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  border: 1px solid rgb(204, 204, 204);
+  flex-direction: column;
+  box-shadow: 3px 4px 4px rgb(149, 149, 149);
+  align-items: stretch;
+  border-radius: 10px;
+}
+.section3 .leftSide .sCard2 .image {
+  background-image: url("https://www.nike.sa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwe0cf38f7/nk/35c/0/7/f/6/9/35c07f69_1d7a_4272_abe4_4adf4b9a9d2f.jpg?sw=700&sh=700&sm=fit&q=100&strip=false");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px; 
+  transition: background-image 0.3s ease-in-out;
+}
+.section3 .leftSide .sCard2 .image:hover {
+  background-image: url("https://www.rebelsport.com.au/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dw72f7e2f8/images/71377101/Rebel_71377101-01_black_hi-res.jpg?sw=1000&sh=1000&sm=fit&q=80");
+}
+.section3 .leftSide .sCard2 .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+    font-family: "Instrument Serif", serif;
+}
+.section3 .sellingCards {
+  padding: 10px 5px 0px 0px;
+  display: flex;
+  gap: 20px;
+}
+.section3 .footerDes{
+  padding: 30px 0px 0px 10px;
+}
+.section3 .footerDes p{
+   font-size: 16px;
+   width: 300px;
+    font-family: "Instrument Serif", serif;
+}
+.section3 .leftSide h1 {
+  font-size: 30px;
+  font-family: "Stack Sans Headline", sans-serif;
+}
+.section3 .leftSide h2 {
+  font-size: 60px;
+   font-family: "Momo Trust Display", sans-serif;
+    font-style: italic;
+}
+.section4 {
+  height: auto;
+  padding: 200px 0px 100px 0px;
+} 
+.section4 .sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+}
+.section4 .sectionHeader h1 {
+  margin: 20px 0;
+  line-height: 0.6;
+  font-size: 150px;
+  font-family: "Stack Sans Headline", sans-serif;
+  color:#3a3a3a;
+}
+.section4 .sectionHeader .box {
+  border: 1px solid rgb(177, 177, 177);
+  padding: 10px 60px;
+  font-size: 12px;
+  font-family: "Instrument Serif", serif;
+  border-radius: 20px;
+}
+.section4 .ReadMore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.section4 .content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+.section4 .content .leftPart {
+  width: 500px;
+}
+.section4 .content .rightPart .box {
+  width: 800px;
+  height: auto;
+}
+.section4 .content .rightPart img{
+  width: auto; height: 600px;
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prevBtn, .nextBtn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.section4 .content .rightPart {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 850px;
+}
+
+.section4 .content .rightPart::-webkit-scrollbar {
+  display: none; 
+}
+
+.section4 .content .rightPart .box {
+  min-width: 800px;
+  margin-right: 50px;
+}
+.section4 .content .rightPart img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.section5 {
+  padding-bottom: 50px;
+}
+.section6 {
+  display: flex;
+  height: 120vh;
+  gap: 100px;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section6 .leftSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 50vw;
+}
+.section6 .leftSide h1{
+  width: 500px;
+  font-family: "Stack Sans Headline", sans-serif;
+  padding: 30px;
+}
+.section6 .leftSide p{
+  width: 600px;
+  font-family: "Instrument Serif", serif;
+  font-size: 20px;
+  
+}
+.section6 .leftSide img {
+  width: 500px;
+  border-radius: 10px;
+  height: auto;
+  transition: transform 0.2s ease-in;
+  
+}
+.section6 .leftSide img:hover {
+  transform: translateY(-5px) translateX(2px);
+  box-shadow: 3px 3px 4px rgb(149, 149, 149);
+}
+
+.section6 .rightSide {
+  width: 50%;
+  max-width: 50vw;
+  height: 100%; 
+  background-image: url("https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+}
+.section6 .rightSide .textContainer{
+  width: 500px;
+  color:#3f3f3f;
+  position: absolute;
+  z-index: 1000;
+  padding: 30px;
+  font-family: "Stack Sans Headline", sans-serif;
+}
+
+.section6 .textContainer span{
+  font-family: "Momo Trust Display", sans-serif;
+  font-style: italic;
+}
+.section6 .box {
+  margin-top: 30px;
+  border: 1px solid rgb(177, 177, 177);
+  padding: 10px 60px;
+  font-size: 12px;
+  font-family: "Instrument Serif", serif;
+  border-radius: 20px;
+}
+
+.textContainer button {
+ position: relative;
+ z-index: 1000;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-family: "Momo Trust Display", sans-serif;
+font-style: italic;
+}
+
+.textContainer button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+.textContainer button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #282936;
+ border-radius: 1.625rem;
+}
+
+.textContainer button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+.textContainer button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+.textContainer button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+.textContainer button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.textContainer button:hover .circle {
+ width: 100%;
+}
+
+.textContainer button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+.textContainer button:hover .button-text {
+ color: #fff;
+}
+.MainHeading {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  font-family: "Stack Sans Headline", sans-serif;
+  font-size: 80px;
+  color:#8a8a8a;
+}
+.section7 .leftSide{
+  z-index: 1000;
+  padding: 50px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.section7 .leftSide img{
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+.section8 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section8 .leftSide img{
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+.section8 .leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  text-align: start;
+}
+.section8 .leftSide .beneathPart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:50px;
+  gap: 20px;
+}
+.section8 .rightImage {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section8 .rightImage img{
+  height: 60vh;
+  border-radius: 10px;
+}
+.section8 .leftSide h1{
+  font-family: "Stack Sans Headline", sans-serif;
+  font-size: 50px;
+  color:#8a8a8a;
+  margin-top: 10px;
+}
+.section8 .leftSide p{
+  font-family: "Instrument Serif", serif;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 400px;
+}
+.section8 .leftSide .card {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background: rgba(237, 237, 237, 0.3); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 4px 4px rgb(149, 149, 149);
+  align-items: stretch;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+}
+.section8 .leftSide .beneathPart .card {
+  transition: transform 0.3s ease;
+}
+
+.section8 .leftSide .beneathPart .card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.2);
+}
+
+
+.section8 .leftSide .beneathPart .card p{
+  font-size: 16px;
+  width: 300px;
+}
+.section8 .rightImage p{
+  font-size: 16px;
+  width: 400px;
+  font-family: "Instrument Serif", serif;
+  text-align: center;
+  margin-top: 20px;
+}
+.section8 .rightImage img{
+  box-shadow: 10px 12px 12px rgb(199, 199, 199);
+}
+
+.section8 button {
+ position: relative;
+ z-index: 1000;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-family: "Momo Trust Display", sans-serif;
+font-style: italic;
+}
+
+.section8 button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+.section8 button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #282936;
+ border-radius: 1.625rem;
+}
+
+.section8 button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+.section8 button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+.section8 button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+.section8 button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.section8 button:hover .circle {
+ width: 100%;
+}
+
+.section8 button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+.section8 button:hover .button-text {
+ color: #fff;
+}
+.section9 {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section9 .small img {
+  width: 300px;
+  height: auto;
+}
+.section9 .center img{
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  text-align: center;
+  position: relative;
+}
+.section9 .center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.section9 .left img {
+  transform: rotate(-30deg) translateY(500px) translateX(-200px);
+}
+.section9 .right img {
+  transform: rotate(30deg) translateY(200px);
+  z-index: 1000;
+  position: relative;
+}
+.section9 .containImage{
+  height: 110vh;
+  width: auto;
+  overflow: hidden;
+}
+.Details {
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 16px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.Details:hover {
+    background-color: black;
+    color: white;
+}
+.btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+.btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+.Details:hover .btn-text{
+    transform: translateY(-100%);
+}
+.section9 .center h1{
+  font-family: "Momo Trust Display", sans-serif;
+  color:#8a8a8a;
+  font-size: 80px;
+  font-style: italic;
+}
+.section10{
+  height: 70vh;
+  background-image: url('https://www.marchon.com/dam/jcr:f3a2c8f7-da98-49b4-b68c-236d02f58913/132391-24-MANI-SS25-Marchon.com-Imagery-Primary.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  inset: 0;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-size: cover;
+}

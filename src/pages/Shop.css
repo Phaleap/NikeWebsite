@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section11 {
+    background-image: url('https://static.nike.com/a/images/w_1920,c_limit/b85de5d2-23a3-4edc-81a4-338bad056481/the-best-nike-running-shoes-for-winter.jpg');
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    z-index: -1;
+    position: relative;
+    display: flex;
+    padding: 50px;
+    justify-content: start;
+    align-items: end;
+    height: 90vh;
+    color: white;
+}
+.section11 .content {
+    width: 30%;
+    z-index: 1000;
+    position: relative;
+}
+.section11 .content h1 {
+    font-size: 4rem;
+    font-family: "Stack Sans Headline", sans-serif;
+    margin-bottom: 20px;
+}
+.section11 .content p {
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Momo Trust Display", sans-serif;
+    margin-bottom: 40px;
+}
+.section12 {
+    display: flex;
+    height: auto;
+    background-color: #ffffff;
+}
+.inner .text {
+    font-family: "Instrument Serif", serif;
+    font-size: 1rem;
+    color: white;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    padding: 3px;
+    border: 1px solid rgb(145, 145, 145);
+}
+.smallContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid rgb(200, 200, 200);
+}
+.smallContainer .articleHeader {
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.section12 .slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.shoe-card {
+  min-width: 400px;
+  height: 620px; 
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(218, 218, 218);
+  display: flex;
+  flex-direction: column;
+}
+
+/* SHARED CARD STYLES (for both card1 and card2) */
+.section12 .card1,
+.section12 .card2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section12 .imageContain,
+.section12  .imageContain {
+  width: 400px;
+  height: 500px;
+  position: relative; 
+}
+
+.shoe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.shoe-image.default {
+  opacity: 1;
+}
+
+.shoe-image.hover {
+  opacity: 0;
+}
+
+.shoe-card:hover .shoe-image.default {
+  opacity: 0;
+}
+
+.shoe-card:hover .shoe-image.hover {
+  opacity: 1;
+}
+
+
+/* BUTTON */
+.Details {
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Details:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-text {
+  position: relative;
+  display: inline-block;
+  padding: 0.4rem 0;
+  transition: transform 0.3s ease;
+}
+
+.btn-text::before {
+  content: attr(before);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.Details:hover .btn-text {
+  transform: translateY(-100%);
+}
+
+/* TEXT LAYOUT */
+.shoe-card .above,
+.shoe-card .below {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.shoe-card p {
+  font-family: "Instrument Serif", serif;
+  font-size: 1.2rem;
+  color: rgb(75, 75, 75);
+}
+
+.section13 {
+  background-image: url('https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/718882d5-4af9-47f9-beba-120124662ac4/image.jpg');
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-attachment: fixed;
+  z-index: -1;
+  position: relative;
+  display: flex;
+  padding: 50px;
+  justify-content: start;
+  align-items: end;
+  height: 90vh;
+  color: white;
+}
+.section13 .content {
+    width: 40%;
+    z-index: 1000;
+    position: relative;
+}
+.section13 .content h1 {
+    font-size: 4rem;
+    font-family: "Stack Sans Headline", sans-serif;
+    margin-bottom: 20px;
+}
+.section13 .content p {
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Momo Trust Display", sans-serif;
+    margin-bottom: 40px;
+}
+/* section14 */
+.section14 .card1,
+.section14 .card2 {
+  display: flex;
+  flex-direction: column;
+}
+.section14 .slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.section14 .imageContain,
+.section14  .imageContain {
+  width: 400px;
+  height: 500px;
+  position: relative; 
+}
+
+.shoe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.shoe-image.default {
+  opacity: 1;
+}
+
+.shoe-image.hover {
+  opacity: 0;
+}
+
+.shoe-card:hover .shoe-image.default {
+  opacity: 0;
+}
+
+.shoe-card:hover .shoe-image.hover {
+  opacity: 1;
+}
+
+
+/* BUTTON */
+.Details {
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Details:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-text {
+  position: relative;
+  display: inline-block;
+  padding: 0.4rem 0;
+  transition: transform 0.3s ease;
+}
+
+.btn-text::before {
+  content: attr(before);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.Details:hover .btn-text {
+  transform: translateY(-100%);
+}
+
+/* TEXT LAYOUT */
+.shoe-card .above,
+.shoe-card .below {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.shoe-card p {
+  font-family: "Instrument Serif", serif;
+  font-size: 1.2rem;
+  color: rgb(75, 75, 75);
+}
+.section15 {
+  background-image: url('https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/06d6f2e7-08da-4c3d-85d7-58f308cface1/pdp.jpg');
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-attachment: fixed;
+  z-index: -1;
+  position: relative;
+  display: flex;
+  padding: 50px;
+  justify-content: start;
+  align-items: end;
+  height: 90vh;
+  color: white;
+}
+.section15 .content {
+    width: 40%;
+    z-index: 1000;
+    position: relative;
+}
+.section15 .content h1 {
+    font-size: 4rem;
+    font-family: "Stack Sans Headline", sans-serif;
+    margin-bottom: 20px;
+}
+.section15 .content p {
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Momo Trust Display", sans-serif;
+    margin-bottom: 40px;
+}
+/* section14 */
+.section16 .card1,
+.section16 .card2 {
+  display: flex;
+  flex-direction: column;
+}
+.section16 .slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.section16 .imageContain,
+.section16  .imageContain {
+  width: 400px;
+  height: 500px;
+  position: relative; 
+}

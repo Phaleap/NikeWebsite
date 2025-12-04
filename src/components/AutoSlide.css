@@ -1,0 +1,30 @@
+.scroll-wrapper {
+  overflow: hidden;
+}
+.scroll-wrapper:hover .inner{
+  animation-play-state: paused;
+}
+.scroll {
+  display: flex;
+}
+
+.inner {
+  display: flex;
+  animation: scroll 50s linear infinite;
+}
+
+.inner img {
+  width: auto;
+  height: 350px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

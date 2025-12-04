@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+  margin: 10px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  width: 95%;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(80, 80, 80, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+    font-family: "Instrument Serif", serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-links a{
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+    transition: color 0.3s, opacity 0.3s;
+    
+}
+.nav-links:hover a{
+    opacity: 0.5;
+}
+.nav-links a:hover{
+    opacity: 1; 
+    color: rgb(255, 255, 255);
+}
+.nav-links li {
+    list-style: none;
+}
+nav .logo{
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 20px;
+    color:  rgb(0, 0, 0);
+}
+
+.loginBtn {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 16px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.loginBtn:hover {
+    background-color: black;
+    color: white;
+}
+.btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+.btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+.loginBtn:hover .btn-text{
+    transform: translateY(-100%);
+}
+.shopXLog {
+    background-color: rgb(109, 109, 109);
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
