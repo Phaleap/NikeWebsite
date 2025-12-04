@@ -8,7 +8,7 @@ import { AiOutlineThunderbolt } from "react-icons/ai";
 import { IoCloudOutline } from "react-icons/io5";
 import { SiNike } from "react-icons/si";
 import Slide from "./Slide";
-import AutoSlide from "../components/autoSlide";
+import AutoSlide from "../components/AutoSlide";
 import Footer from "../components/Footer";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
