@@ -1,0 +1,135 @@
+.container{
+    height: 100vh;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.location, .contact{
+    font-family: "Instrument Serif", serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+.contact{
+    border: 1px solid rgb(108, 108, 108);
+}
+.contact h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* FORM LAYOUT */
+.contact-form {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* TWO COLUMN ROW */
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* FIELD */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* LABEL */
+.field label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* INPUT & TEXTAREA */
+.field input {
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  padding: 8px 2px;
+  font-size: 16px;
+  outline: none;
+  width: 270px;
+}
+.field textarea {
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  padding: 8px 2px;
+  font-size: 16px;
+  outline: none;
+  width: 500px;
+}
+
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom: 2px solid black;
+}
+
+/* MESSAGE BOX */
+.field textarea {
+  resize: none;
+}
+
+/* BOTTOM AREA */
+.form-bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* BUTTON */
+.form-bottom button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-bottom button:hover {
+  background: #585858;
+}
+
+/* CHECKBOX */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
