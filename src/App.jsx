@@ -14,9 +14,8 @@ import Service from './pages/Service'
 const App = () => {
   return (
     <>
-
-
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/slide" element={<Slide />} />
         <Route path="/shop" element={<Shop />} />
@@ -26,6 +25,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/service" element={<Service/>}/>
+        
       </Routes>
     </>
   )
