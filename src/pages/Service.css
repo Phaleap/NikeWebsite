@@ -14,7 +14,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .heading h1{
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     font-family: "Instrument Serif", serif;
 }
@@ -34,11 +34,19 @@
     padding: 20px;
 
 }
-.sectionOne .leftPart img, .sectionTwo .rightPart img, .sectionThree .leftPart img, .sectionFour .rightPart img, .sectionFive .leftPart img, .sectionSix .rightPart img{
+.sectionOne .leftPart img,.sectionTwo .rightPart img, .sectionThree .leftPart img, .sectionFour .rightPart img, .sectionFive .leftPart img, .sectionSix .rightPart img{
     width: 100%;
-    display: block;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
 }
+.sectionOne .leftPart .imageFrame,.sectionTwo .rightPart .imageFrame, .sectionThree .leftPart .imageFrame, .sectionFour .rightPart .imageFrame, .sectionFive .leftPart .imageFrame, .sectionSix .rightPart .imageFrame {
+  width: 25vw;          
+  height: 30vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 .sectionOne .rightPart, .sectionTwo .leftPart, .sectionThree .rightPart, .sectionFour .leftPart, .sectionFive .rightPart, .sectionSix .leftPart{
     width: 50%;
     height: 100%;

@@ -32,18 +32,264 @@ const Service = () => {
         duration: 1.5,
         ease: "power3.out",
       });
-      const img = sectionOneRef.current.querySelector(".leftPart .imageFrame");
-      gsap.from(img, {
-        y: 200,
-        opacity: 0,
-        duration: 1.5,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionOneRef.current,
-          start: "top 70%",
-          scrub: true,
-        },
-      });
+     // SECTION ONE
+gsap.to(
+  sectionOneRef.current.querySelector(".imageFrame"),
+  {
+    width: "53vw",
+    height: "90vh",
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionOneRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+
+gsap.to(
+  sectionOneRef.current.querySelector(".imageFrame img"),
+  {
+    scale: 1,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionOneRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+gsap.from(
+  sectionOneRef.current.querySelector(".rightPart h1"),
+  {
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionOneRef.current,
+      start: "top 70%",
+      once: true,
+    }
+  }
+)
+
+// SECTION TWO
+gsap.to(
+  sectionTwoRef.current.querySelector(".imageFrame"),
+  {
+    width: "53vw",
+    height: "90vh",
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionTwoRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+
+gsap.to(
+  sectionTwoRef.current.querySelector(".imageFrame img"),
+  {
+    scale: 1,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionTwoRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+gsap.from(
+  sectionTwoRef.current.querySelector(".leftPart h1"),
+  {
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionTwoRef.current,
+      start: "top 70%",
+      once: true,
+    }
+  }
+)
+// SECTION three
+gsap.to(
+  sectionThreeRef.current.querySelector(".imageFrame"),
+  {
+    width: "53vw",
+    height: "90vh",
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionThreeRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+
+gsap.to(
+  sectionThreeRef.current.querySelector(".imageFrame img"),
+  {
+    scale: 1,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionThreeRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+gsap.from(
+  sectionThreeRef.current.querySelector(".rightPart h1"),
+  {
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionThreeRef.current,
+      start: "top 70%",
+      once: true,
+    }
+  }
+)
+// SECTION four
+gsap.to(
+  sectionFourRef.current.querySelector(".imageFrame"),
+  {
+    width: "53vw",
+    height: "90vh",
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionFourRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+
+gsap.to(
+  sectionFourRef.current.querySelector(".imageFrame img"),
+  {
+    scale: 1,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionFourRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+gsap.from(
+  sectionFourRef.current.querySelector(".leftPart h1"),
+  {
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionFourRef.current,
+      start: "top 70%",
+      once: true,
+    }
+  }
+)
+// SECTION five
+gsap.to(
+  sectionFiveRef.current.querySelector(".imageFrame"),
+  {
+    width: "53vw",
+    height: "90vh",
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionFiveRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+gsap.to(
+  sectionFiveRef.current.querySelector(".imageFrame img"),
+  {
+    scale: 1,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionSixRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+gsap.from(
+  sectionFiveRef.current.querySelector(".rightPart h1"),
+  {
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionFiveRef.current,
+      start: "top 70%",
+      once: true,
+    }
+  }
+)
+// SECTION six
+gsap.to(
+  sectionSixRef.current.querySelector(".imageFrame"),
+  {
+    width: "53vw",
+    height: "90vh",
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionSixRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+
+gsap.to(
+  sectionSixRef.current.querySelector(".imageFrame img"),
+  {
+    scale: 1,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionSixRef.current,
+      start: "top 70%",
+      once: true,
+    },
+  }
+);
+gsap.from(
+  sectionSixRef.current.querySelector(".leftPart h1"),
+  {
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: sectionSixRef.current,
+      start: "top 70%",
+      once: true,
+    }
+  }
+)
     }, rootRef);
     return () => ctx.revert();
   }, []);
@@ -74,12 +320,16 @@ const Service = () => {
               <p>Customers can browse products, choose sizes and colors, and place orders quickly through our secure website.</p>
           </div>
           <div className="rightPart">
+              <div className="imageFrame">
               <img src="https://assets.footlocker.com/is/image/FLDM/260202-fl-recezCjpJpAnH9SCD-valentines-day-gifting-secondary-2up?fmt=webp-alpha&bfc=on" alt="" />
+              </div>
           </div>
         </section>
         <section className="sectionThree" ref={sectionThreeRef}>
            <div className="leftPart">
+            <div className="imageFrame">
               <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/55450252-7721-4167-8933-9ec42bc4e798/pick-up-point-delivery.jpg" alt="" />
+            </div>
           </div>
           <div className="rightPart">
               <h1>Delivery Service</h1>
@@ -94,12 +344,16 @@ const Service = () => {
               <p>If the size or style doesn’t fit, customers can request an exchange or return within a specified period.</p>
           </div>
           <div className="rightPart">
+            <div className="imageFrame">
               <img src="https://static.nike.com/a/images/f_auto/55f84628-0f12-44f3-9b95-578f75176367/image.jpeg" alt="" />
+            </div>
           </div>
         </section>
         <section className="sectionFive" ref={sectionFiveRef}>
            <div className="leftPart">
+            <div className="imageFrame">
               <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/c52cfd20-7e0f-4f1a-91af-c06f0c60022a/ask-our-store-athletes.jpg" alt="" />
+            </div>
           </div>
           <div className="rightPart">
               <h1>Customer Support</h1>
@@ -114,7 +368,9 @@ const Service = () => {
               <p>Enjoy exclusive promotions, discounts, and bundle deals throughout the year.</p>
           </div>
           <div className="rightPart">
+            <div className="imageFrame">
               <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/52de4e09-977f-446b-97bd-b11b3bd95b75/official-nike-promo-discount-codes.png" alt="" />
+            </div>
           </div>
         </section>
         <section className="sectionSeven" ref={sectionSevenRef}>

@@ -37,8 +37,8 @@ const Footer = () => {
           <input type="text" placeholder="ENTER YOUR EMAIL"/>
           <br />
           <br />
-          <button class="Details">
-          <span class="btn-text" before="SUBCRIBE">SUBCRIBE</span>
+          <button className="Details">
+          <span className="btn-text" data-before="SUBCRIBE">SUBCRIBE</span>
           </button>
           <br />
           <div className="contain4">
