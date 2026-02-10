@@ -18,6 +18,7 @@ const Service = () => {
   const sectionFiveRef = useRef(null);
   const sectionSixRef = useRef(null);
   const sectionSevenRef = useRef(null);
+  const sectionSevenH1Ref = useRef(null);
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(headingRef.current.querySelector("h1"), {
@@ -227,7 +228,7 @@ gsap.to(
     duration: 1.2,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: sectionSixRef.current,
+      trigger: sectionFiveRef.current,
       start: "top 70%",
       once: true,
     },
@@ -289,14 +290,86 @@ gsap.from(
       once: true,
     }
   }
-)
+);
+
+const section = sectionSevenRef.current;
+const h1 = sectionSevenH1Ref.current;
+
+const text = h1.textContent;
+h1.innerHTML = text
+  .split("")
+  .map((ch) => `<span class="char">${ch === " " ? "&nbsp;" : ch}</span>`)
+  .join("");
+
+const chars = h1.querySelectorAll(".char");
+
+const tl7 = gsap.timeline({
+  scrollTrigger: {
+    trigger: section,
+    start: "top top",
+    end: "+=2000",
+    scrub: true,
+    pin: true,
+    anticipatePin: 1,
+  },
+});
+
+tl7.to(chars, {
+  color: "white",
+  stagger: { each: 0.01, from: "start" },
+  ease: "none",
+});
+
+tl7.to(
+  h1,
+  {
+    y: -25,
+    ease: "none",
+  },
+  0
+);
+
+let active = false;
+
+const st7 = ScrollTrigger.create({
+  trigger: section,
+  start: "top top",
+  end: "+=2000",
+  onEnter: () => (active = true),
+  onEnterBack: () => (active = true),
+  onLeave: () => (active = false),
+  onLeaveBack: () => (active = false),
+});
+
+const onMove = (e) => {
+  if (!active) return;
+
+  const rect = section.getBoundingClientRect();
+  const px = (e.clientX - (rect.left + rect.width / 2)) / (rect.width / 2);
+  const py = (e.clientY - (rect.top + rect.height / 2)) / (rect.height / 2);
+
+  gsap.to(h1, {
+    x: px * 18,
+    y: py * 10,
+    duration: 0.25,
+    overwrite: true,
+    ease: "power2.out",
+  });
+};
+
+window.addEventListener("pointermove", onMove);
+return () => {
+  window.removeEventListener("pointermove", onMove);
+  st7.kill();
+};
+
     }, rootRef);
     return () => ctx.revert();
   }, []);
   return (
     <div>
       <Navbar/>
-      <div ref={rootRef}>
+      <div className="servicePage" ref={rootRef}>
         <section className="heading" ref={headingRef}>
           <h1>Our Services</h1>
           <p>At Nike, we aim to provide a smooth and reliable shopping experience. From offering authentic Nike shoes to secure ordering, fast delivery, and helpful customer support, our services are designed to make your purchase easy and enjoyable.</p>
@@ -374,7 +447,7 @@ gsap.from(
           </div>
         </section>
         <section className="sectionSeven" ref={sectionSevenRef}>
-          <h1>With a strong focus on quality, convenience, and customer satisfaction, Nike is here to be your trusted destination for premium footwear. We’re committed to delivering the best products and services every time you shop with us.</h1>
+          <h1 ref={sectionSevenH1Ref}>With a strong focus on quality, convenience, and customer satisfaction, Nike is here to be your trusted destination for premium footwear. We’re committed to delivering the best products and services every time you shop with us.</h1>
         </section>
         </div>
       <Footer/>
