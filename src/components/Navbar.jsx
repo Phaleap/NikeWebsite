@@ -15,6 +15,7 @@ const Navbar = forwardRef((props, ref) => {
                     <li><Link to="/contact">CONTACT</Link></li>
                     <li><Link to="/shop">SHOP</Link></li>
                     <li><Link to="/service">SERVICE</Link></li>
+                    <li><Link to="/shopDetails">SHOP DETAILS</Link></li>
                 </ul>
                 <div className='shopXLog'>
                     <Link to="/account"><MdOutlinePerson style={{ color: "white", fontSize: "20px" }} /></Link>|

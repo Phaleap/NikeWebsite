@@ -10,6 +10,7 @@ import ForgetPW from './pages/ForgetPW'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Service from './pages/Service'
+import ShopDetails from './pages/ShopDetails'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/service" element={<Service/>}/>
+        <Route path="/shopDetails" element={<ShopDetails/>}/>
         
       </Routes>
     </>

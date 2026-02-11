@@ -277,6 +277,7 @@ const kidSliderRef = React.useRef(null);
               </div>
               <div className="below">
                 <p>{shoe.price}</p>
+              
                 <button className="Details">
       <span className="btn-text" before="Interesting">More Details</span>
     </button>
