@@ -1,54 +1,268 @@
-.shopDetails{
-    height: 100vh;
+/* Page Layout */
+.shopDetails {
+    height: 130vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    padding-top: 60px;
 }
-.shopDetails .leftPart{
-    height: 80%;
-    width: 45%;
+
+/* LEFT PART (thumb rail + big stage) */
+.shopDetails .leftPart {
+    height: 70%;
+    width: 45%;           /* KEEP */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    align-items: stretch;
+    gap: 18px;
 }
-.shopDetails .leftPart .smallImages{
-    height: 100%;
-    width: 20%;
+
+/* Thumbnail rail */
+.thumbs {
+    width: 72px;          /* slim rail like Nike */
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.thumbs::-webkit-scrollbar {
+    width: 6px;
+}
+.thumbs::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 999px;
+}
+
+/* Individual thumb */
+.thumb {
+    width: 72px;
+    height: 72px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background: #f5f5f5;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.thumb:hover {
+    border: 1px solid #111;
+    background: #fff;
+}
+
+.thumb.active {
+    border: 2px solid #111;
+    background: #fff;
+}
+
+/* Big stage image */
+.stage {
+    flex: 1;
+    border-radius: 14px;
+    background: #f3f3f3;           /* Nike-like light gray */
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
 }
-.shopDetails .leftPart .image{
-    height: 20%;
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid rgb(150, 150, 150);
-}
-.shopDetails .leftPart .image img, .bigImage img{
+
+.stage img {
+    width: 88%;
     height: auto;
-    width: 100%;
-    border-radius: 10px;
+    object-fit: contain;
 }
-.shopDetails .leftPart .bigImage{
-    height: 100%;
-    width: 80%;
-    border-radius: 10px;
-    border: 1px solid rgb(150, 150, 150);
+
+/* arrows */
+.stageNav {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    display: flex;
+    gap: 10px;
 }
-.shopDetails .rightPart{
-    height: 80%;
-    width: 45%;
+
+.stageNav button {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.stageNav button:hover {
+    transform: translateY(-1px);
+}
+
+/* RIGHT PART (Nike-like) */
+.shopDetails .rightPart {
+    height: 90%;
+    width: 45%;          /* KEEP */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0;     /* Nike is clean, less boxy */
+    gap: 18px;
+}
+
+/* Product Info */
+.productInfo h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.productInfo h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin: 6px 0 0 0;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+/* Color thumbs */
+.colorImages {
+    display: flex;
+    gap: 12px;
+}
+
+.colorThumb {
+    width: 72px;
+    height: 72px;
     border-radius: 10px;
-    border: 1px solid rgb(150, 150, 150);
+    border: 1px solid #e1e1e1;
+    background: #f5f5f5;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.colorThumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.colorThumb:hover {
+    border: 1px solid #111;
+    background: #fff;
+}
+
+.colorThumb.active {
+    border: 2px solid #111;
+    background: #fff;
+}
+
+/* Size */
+.sizeSection {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.sizeTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.sizeTop h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sizeGuide {
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #111;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+/* Size grid */
+.sizeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.sizeBtn {
+    height: 52px;
+    border-radius: 10px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.sizeBtn:hover {
+    border: 1px solid #111;
+}
+
+.sizeBtn.selected {
+    border: 2px solid #111;
+}
+
+/* Disabled sizes */
+.sizeBtn:disabled {
+    background: #f3f3f3;
+    color: #aaa;
+    text-decoration: line-through;
+    cursor: not-allowed;
+    border: 1px solid #e3e3e3;
+}
+
+/* Add To Bag */
+.addToBag {
+    margin-top: 18px;
+    width: 100%;
+    height: 64px;
+    border-radius: 999px;
+    border: none;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.addToBag:hover {
+    opacity: 0.88;
+}
+
+.addToBag:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.hintText {
+    margin: -8px 0 0 0;
+    font-size: 12px;
+    color: #777;
 }
